@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑馬面面</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+</head>
+
+<body>
+    <section class="wrap">
+        <!-- 頭部區域 -->
+        <header class="header">黑马面面</header>
+
+        <!-- 導航欄部分 -->
+        <nav class="nav">
+            <a href="#" class="items">
+                <img src="./icons/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#" class="items">
+                <img src="./icons/icon2.png" alt="">
+                <span>笔试</span>
+            </a>
+            <a href="#" class="items">
+                <img src="./icons/icon3.png" alt="">
+                <span>技术面试</span>
+            </a>
+            <a href="#" class="items">
+                <img src="./icons/icon4.png" alt="">
+                <span>模拟面试</span>
+            </a>
+            <a href="#" class="items">
+                <img src="./icons/icon5.png" alt="">
+                <span>面试技巧</span>
+            </a>
+            <a href="#" class="items">
+                <img src="./icons/icon6.png" alt="">
+                <span>薪资查询</span>
+            </a>
+        </nav>
+        <!-- go模塊 -->
+        <section class="go">
+            <img src="./images/go.png" alt="">
+        </section>
+    </section>
+
+    <!-- 就業指導模塊 -->
+    <section class="content">
+        <div class="con-hd">
+            <h4>
+                <span class="icon"><img src="./icons/i2.png" alt=""></span>
+                就业指导
+            </h4>
+            <a href="#" class="more">更多>></a>
+        </div>
+        <!-- 輪播圖模塊 -->
+        <div class="get_job_focus">
+            <!-- Swiper -->
+            <div class="swiper-container get_job_fo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/ldh.jpg" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/3.jpg" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Add Navigation Swiper -->
+            <div class="swiper-button-prev"></div>
+            <!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+            <div class="swiper-button-next"></div>
+            <!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+        </div>
+    </section>
+    <!-- 充電學習模塊 -->
+    <section class="content study_con">
+        <div class="con-hd">
+            <h4>
+                <span class="icon"><img src="./icons/i1.png" alt=""></span>
+                充电学习
+            </h4>
+            <a href="#" class="more">更多>></a>
+        </div>
+        <!-- 學習模塊輪播圖 -->
+        <div class="study">
+            <!-- Swiper -->
+            <div class="swiper-container study_fo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>說地道英語，告別中式英文</h5>
+                        <p>156人學習</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/pic2.png" alt="">
+                        <h5>說地道英語，告別中式英文</h5>
+                        <p>156人學習</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>說地道英語，告別中式英文</h5>
+                        <p>156人學習</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/pic1.png" alt="">
+                        <h5>說地道英語，告別中式英文</h5>
+                        <p>156人學習</p>
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <a href="#" class="item">
+            <img src="./icons/home.png" alt="">
+            <p>首頁</p>
+        </a>
+        <a href="#" class="item">
+            <img src="./icons/ms.png" alt="">
+            <p>模擬面試</p>
+        </a>
+        <a href="#" class="item">
+            <img src="./icons/net.png" alt="">
+            <p>技術面試</p>
+        </a>
+        <a href="#" class="item">
+            <img src="./icons/user.png" alt="">
+            <p>我的主頁</p>
+        </a>
+    </footer>
+    <script src="js/flexible.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        //第一個函數裡面是 就業指導輪播圖
+        (function () {
+            var swiper = new Swiper('.get_job_fo', {
+                //能夠顯示的slide個數
+                slidesPerView: 2,
+                //每個slide之間的距離
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+            });
+        })();
+        // 第二個函數 是 學習模塊輪播圖
+        (function () {
+            //如果有多個swiper-container 最好修改
+            var swiper = new Swiper('.study_fo', {
+                slidesPerView: 2.3,
+                spaceBetween: 20,
+
+            });
+        })()
+    </script>
+</body>
+
+</html>
